@@ -15,11 +15,11 @@ function makeClones() {
 }
 
 function changeColour() {
-  this.style.backgroundColor = "pink";
+  this.style.backgroundColor = "lightpink";
 }
 
 function promptMe() {
-  input = prompt("how many squares?");
+  input = prompt("how many squares on each side?");
   if (input < 100) makeNewPad();
   else {
     alert("enter a number below 100");

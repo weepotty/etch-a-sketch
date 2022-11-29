@@ -14,11 +14,11 @@
   height: 600px;
   grid-template-columns: repeat(var(--colNum), auto);
   grid-template-rows: repeat(var(--rowNum), auto);
-  background-color: lightblue;
 }
 
 .grid-element {
   border: 1px black solid;
+  background-color: lightblue;
 }
 
 button {
