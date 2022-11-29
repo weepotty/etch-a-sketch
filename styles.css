@@ -7,6 +7,21 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  font-family: "Homemade Apple", cursive, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+
 .container {
   display: grid;
   border: 2px solid black;
