@@ -20,7 +20,11 @@ function changeColour() {
 
 function promptMe() {
   input = prompt("how many squares?");
-  if (input) makeNewPad();
+  if (input < 100) makeNewPad();
+  else {
+    alert("enter a number below 100");
+    promptMe();
+  }
 }
 
 function makeNewPad(gridRows, gridColumns) {
