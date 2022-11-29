@@ -1,10 +1,9 @@
 const container = document.querySelector(".container");
+
 let input = 16;
 const square = document.createElement("div");
 square.classList.add("grid-element");
 let gridElements;
-
-makeNewPad(16, 16);
 
 function makeClones() {
   for (let i = 0; i < input ** 2; i++) {
@@ -33,3 +32,5 @@ function makeNewPad(gridRows, gridColumns) {
   container.style.setProperty("--rowNum", gridRows);
   gridElements.forEach((e) => e.addEventListener("mouseover", changeColour));
 }
+
+makeNewPad(16, 16);
