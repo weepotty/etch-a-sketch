@@ -1,23 +1,29 @@
+:root {
+  --rowNum: 16;
+  --colNum: 16;
+}
+
 * {
   box-sizing: border-box;
 }
+
 .container {
-  border: 1px red solid;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
+  display: grid;
+  border: 2px solid black;
+  width: 600px;
+  height: 600px;
+  grid-template-columns: repeat(var(--colNum), auto);
+  grid-template-rows: repeat(var(--rowNum), auto);
+  background-color: lightblue;
 }
 
 .grid-element {
-  background-color: green;
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
+  border: 1px black solid;
 }
 
-.container > div:nth-child(16n + 1) {
-  width: 100%;
-  border: 0;
-  height: 0;
+button {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: rgb(238, 219, 144);
+  border: 2px solid black;
 }
